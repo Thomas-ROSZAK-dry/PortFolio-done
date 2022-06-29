@@ -7,3 +7,12 @@ export default {
     name: 'NotFound'
 }
 </script>
+
+
+<style scoped>
+.error {
+    background: lightgrey;
+    color: black;
+    font-size: x-large;
+}
+</style>
