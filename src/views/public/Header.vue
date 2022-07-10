@@ -1,57 +1,86 @@
 
 <template>
-   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand has-navbar-fixed-top">
-    <a class="navbar-item "><router-link :to= "{name:'Home'}">  <img src="https://image.flaticon.com/icons/png/512/1085/1085996.png" width="auto" height="auto"></router-link>
+   <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
     </a>
-<i class="fa-solid fa-laptop-code"></i>
-    <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="nav-links" class="navbar-menu">
+  <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item  ">
-       <strong> <router-link :to= "{name:'Home'}">Home</router-link></strong>
+      <a class="navbar-item">
+        Home
       </a>
-    
-          <a class="navbar-item">
-           <strong><router-link :to= "{name:'About'}">About</router-link></strong> 
-          </a>
-          <a class="navbar-item">
-          <strong> <router-link :to= "{name:'Resume'}">Resume</router-link></strong>
-          </a>
-          <a class="navbar-item">
-          <strong> <router-link :to= "{name:'Projects'}">Projects</router-link></strong>
-          </a>
-         <a class="navbar-item">
-            <strong><router-link :to= "{name:'Contact'}">Contact</router-link></strong>
-          </a>
-          </div>
-          
-      </div>
-    
- 
-  
-</nav>
 
+      <a class="navbar-item">
+        Documentation
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Jobs
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 </template>
  
- <script>window.onload=function(){
- const burgerIcon =document.querySelector('#burger');
- const navbarMenu = document.querySelector('#nav-links');
- const navbarNavigation =document.querySelector('.navbar-start')
+ <script lang='ts' >
 
- burgerIcon.addEventListener('click', () => {
- navbarMenu.classList.toggle('is-active');
-   })
- navbarNavigation.addEventListener('click', () => {
- navbarMenu.classList.toggle('is-active');
-   })
- }
+export default {
+
+};
+
+//  window.onload=function(){
+//  const burgerIcon =document.querySelector('.navbar-burger');
+//  const navbarMenu = document.querySelector('.navbar-menu');
+//  const navbarNavigation =document.querySelector('.navbar-start')
+
+//  burgerIcon.addEventListener('click', () => {
+//  navbarMenu.classList.toggle('is-active');
+//    })
+//  navbarNavigation.addEventListener('click', () => {
+//  navbarMenu.classList.toggle('is-active');
+//    })
+//  }
+
    </script>
 
 

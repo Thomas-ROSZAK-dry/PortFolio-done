@@ -1,20 +1,20 @@
 <template>
   
    <div class="card">
-     <div class="card-content mb-6">
+     <div class="card-content mb-1">
     <div class="media mb-6">
       <div class="media-left">
         <figure class="image is-96x96 ml-6" >
-          <img class="photo" src="https://fr.freepik.com/photos-premium/surface-route-asphaltee-grunge-ville_10407923.htm#&position=1&from_view=popular" alt="profile photo">
+          <img class="photo" src="https://img.freepik.com/photos-premium/developpement-programmeur-developpement-technologies-conception-codage-sites-web-travaillant-dans-bureau-societe-logiciels_18497-1234.jpg?w=1380" alt="profile photo">
         </figure>
-        
+       
       </div>
         <div class="media-content mr-6">
         <p class="is-size-3 has-text-weight-bold"><a href="https://github.com/Thomas-ROSZAK-dry" target="_blank" >{{title}}</a></p>
         <router-link to="/Contact" ><p class="subtitle is-6 has-text-weight-bold">{{email}}</p></router-link>
       </div>
     </div>
-    <div class="content has-text-weight-bold pt-2 pb-2 pl-2 pr-2">
+    <div class="content has-text-weight-bold pt-3 pb-3 pl-3 pr-3">
       </div>
       Hi  👋 <br>
  🔭 I’m working on WORDPRESS and VueJS on my professional reorientation  <br>
@@ -81,7 +81,8 @@ a {
     display:flex;
     flex-direction:column;
     align-items:center;
-    
+    font-weight: 800;
+    margin-top: -420px
   }
 .content {
   width:80vh;
@@ -91,10 +92,11 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-     background-image: url('/assets/img/unsplash.jpg');
+     background-image: url('https://img.freepik.com/photos-gratuite/batiments-modernes_1127-2851.jpg?t=st=1657471356~exp=1657471956~hmac=ef3b3e77f470220d36bb050bed73edc439e85bfe5d121f5d1828b94458fb209a&w=1380');
   background-repeat: no-repeat;
-  background:cover;
+  background-size:cover;
   height:100vh;
+  
 }
 }
 </style>
