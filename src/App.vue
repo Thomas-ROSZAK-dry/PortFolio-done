@@ -3,13 +3,14 @@
   <Header />
  <!--header + footer-->
  <router-view />
- <Footer />
+ <Footer></Footer>
  </template>
 
 
 <script lang="ts">
 import Footer from '@/views/public/Footer.vue'
 import Header from '@/views/public/Header.vue'
+
 
 
 export default {

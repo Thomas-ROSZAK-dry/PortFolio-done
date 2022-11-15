@@ -1,13 +1,14 @@
 <template>
-<div class="form" >
+<div class="form mt-6" >
 <form @submit.prevent="submitData">
    <p v-if="confirmMessage" >{{confirmMessage}}</p>
-  <label class="label pt-3">Your Name</label>
+
+  <label class="label pt-5 mt-6">Your Name</label>
       <div class="control name">
            <input id="name" class="input" type="text" placeholder="Enter your name" v-model.trim="enteredName" />
       </div>
 
-  <label class="label pt-3">Your Email</label>
+  <label class="label pt-5">Your Email</label>
       <div class="control has-icons-left has-icons-right ">
           <input class="input" type="email" placeholder="Email" v-model.trim=" enteredEmail"/>
           <span class="icon is-small is-left">
@@ -41,7 +42,7 @@
 </template>
 
 <script>
-import axios from "axios";
+/*import axios from "axios";*/
 
  export default {
   data() {
@@ -63,14 +64,27 @@ import axios from "axios";
       }else
       this.invalidInput = false;
       this.error= null;
-      this.confirmMessage ='Your mail has been sent';
-     
-      
-       axios.post('https://portfolio-6e7af-default-rtdb.europe-west1.firebasedatabase.app/messages.json', {
-       name: this.enteredName,
+      this.confirmMessage ='Your mail has been sent'
+
+     fetch('https://portfolio-db747-default-rtdb.europe-west1.firebasedatabase.app/messages.json', {
+     method: 'POST',
+     headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+     name: this.enteredName,
        mail: this.enteredEmail,
        subject: this.enteredSubject,
        message: this.enteredMessage,
+  }),
+
+
+      
+      /* axios.post('https://portfolio-18efd-default-rtdb.europe-west1.firebasedatabase.app/messages.json', {
+       name: this.enteredName,
+       mail: this.enteredEmail,
+       subject: this.enteredSubject,
+       message: this.enteredMessage,*/
        
         })
         // permets d'idnquer une erreur côté serveur 

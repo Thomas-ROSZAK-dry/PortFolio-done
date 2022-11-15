@@ -1,10 +1,10 @@
 <template>
    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand has-navbar-fixed-top">
-    <a class="navbar-item ">  <img src="https://image.flaticon.com/icons/png/512/1085/1085996.png" width="auto" height="auto">
+    <a class="navbar-item ">  <img src="" width="auto" height="auto">
     
     </a>
-<i class="fa-solid fa-laptop-code"></i>
+<i class=""></i>
     <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
