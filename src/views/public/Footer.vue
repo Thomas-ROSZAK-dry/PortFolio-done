@@ -1,7 +1,7 @@
 <template>
-<div class="bottom has-text-weight-bold">
+<div class="bottom is-size-7">
   <div class="pr-5" ><p><i class="fas fa-copyright fa-2x">2021</i></p></div>
-  <div class="pr-5"><p>{{name}} </p></div>
+  <div class="pr-5 has-text-weight-bold"><p>{{name}} </p></div>
   <div></div>
   
   <div> <a href="https://github.com/Thomas-ROSZAK-dry" target="_blank"> <i class="fab fa-github fa-2x pr-5"></i></a></div>
@@ -24,17 +24,15 @@ export default {
 <style scoped>
 .bottom {
   display:flex;
-  justify-content:center;
+  margin-left: 700px;
   align-items:center;
-  height: 10vh;
+  height: 8vh;
+  
 }
 
 
 a {
  color:black;
-}
-.bottom {
-  background: lightgrey;
 }
 
 </style>

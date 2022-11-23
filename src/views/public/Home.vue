@@ -14,17 +14,17 @@
     <div class=" text is-uppercase ">
       <div class="media-content ">
         <p class="is-size-1 has-text-weight-bold mt-6 "><a href="https://github.com/Thomas-ROSZAK-dry" target="_blank" >{{title}}</a></p>
-        <router-link to="/Contact" ><p class="subtitle is-6 has-text-weight-bold mt-3 is-uppercase is-underlined is-italic	">{{email}}</p></router-link>
+        <router-link to="/Contact" ><p class="has-text-weight-bold  mt-4	">{{email}}</p></router-link>
       </div>
-       👋 <br>
+ 👋 <br>
  🔭 I’m working on WORDPRESS and VueJS on my professional reorientation  <br>
  🌱 I’m currently learning VueJS and NuxtJS and improve my skills on WORDPRESS<br>
  👯 I’m also to collaborate on projects to improve my coding<br>
 🤔 I also try to improve my backend's skills <br>
 💬 Ask me about my goals, hobbies <br>
-I working to present myself  this year for the profesionnal Title of Dev web et web mobile Level 3<br>
-You'll find some of my project I'm working,  some in progress, also some informations about me <br>
-You can also contact me directly if you want.
+   I working to present myself  this year for the profesionnal Title of Dev web et web mobile Level 3<br>
+   You'll find some of my project I'm working,  some in progress, also some informations about me <br>
+   You can also contact me directly if you want.
    
       <br>
     </div>
@@ -59,7 +59,7 @@ export default {
 .card {
   background-image: url('');
   background-repeat: no-repeat;
-  background:lightgray;
+  
   display: flex;
   flex-direction: row;
   align-items: center;

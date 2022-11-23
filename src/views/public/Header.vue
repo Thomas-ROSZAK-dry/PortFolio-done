@@ -15,20 +15,20 @@
   <div id="nav-links" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item  ">
-       <strong>Home</strong>
+        <strong> <router-link :to= "{name:'home'}">Home</router-link></strong>
       </a>
     
           <a class="navbar-item">
-           <strong>About</strong> 
+            <strong> <router-link :to= "{name:'about'}">About</router-link></strong> 
           </a>
           <a class="navbar-item">
-          <strong> Resume</strong>
+            <strong> <router-link :to= "{name:'resume'}">Resume</router-link></strong>
           </a>
           <a class="navbar-item">
-          <strong> Projects</strong>
+            <strong> <router-link :to= "{name:'projects'}">Projects</router-link></strong>
           </a>
          <a class="navbar-item">
-            <strong>Contact</strong>
+            <strong> <router-link :to= "{name:'contact'}">Contact</router-link></strong>
           </a>
           </div>
           
@@ -62,12 +62,8 @@ a {
    color:black;
    font-size:initial;
 }
-.navbar {
-  background:lightgrey;
-}
-.navbar-item{
-  background:lightgrey;
-}
+
+
 .navbar-menu {
   padding: 0;
 }
