@@ -28,7 +28,7 @@ Email: thomasroszak@protonmail.com / <br> Tel 06 29 52 06 99 <br>https://github.
     
 </template>
 
-<script>
+<script lang="ts">
 
 </script>
 

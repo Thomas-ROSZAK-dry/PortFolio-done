@@ -1,5 +1,5 @@
 <template>
-    <div class="projects about is-flex is-flex-direction-column is-align-items-center has-text-weight-bold pt-5 " >
+    <div class="projects about is-flex is-flex-direction-column is-align-items-center has-text-weight-bold pt-5 ">
       <h1 class="  has-text-weight-bold is-size-2">MY PROJECTS</h1>
       <p class=" text mt-4 has-text-centered" >Please find the link below to my different projects done or in progress</p>  
     

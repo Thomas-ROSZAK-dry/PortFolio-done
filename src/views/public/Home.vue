@@ -11,10 +11,10 @@
       </div>
        
     </div>
-    <div class=" text is-uppercase ">
+    <div class=" text ">
       <div class="media-content ">
         <p class="is-size-1 has-text-weight-bold mt-6 "><a href="https://github.com/Thomas-ROSZAK-dry" target="_blank" >{{title}}</a></p>
-        <router-link to="/Contact" ><p class="has-text-weight-bold  mt-4	">{{email}}</p></router-link>
+        <router-link to="/Contact" >📩<p class="has-text-weight-bold  mt-4 	"> {{email}}</p></router-link>
       </div>
  👋 <br>
  🔭 I’m working on WORDPRESS and VueJS on my professional reorientation  <br>
@@ -57,13 +57,14 @@ export default {
  } */
 
 .card {
-  background-image: url('');
+  background-image: url('https://img.freepik.com/photos-gratuite/ville-jour-brouillard_1149-101.jpg?1&w=900&t=st=1701363038~exp=1701363638~hmac=e07ceeb4cdd461c073e7894367b227019027e2327d987b987c3d1c7188679e8b');
   background-repeat: no-repeat;
-  
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-size:cover;
+  height:90vh;
 }
 .photo {
   border-radius: 5px;
@@ -78,11 +79,10 @@ a {
 @media screen and (min-width: 1040px) {
 
 .text {
-  line-height:2.5rem;
   color: black
 }
   .img {
-    width:80vh;
+    
   }
   .card-content {
     display:flex;
@@ -93,17 +93,6 @@ a {
   }
 .content {
   width:80vh;
-}
-.card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-     background-image: url('https://img.freepik.com/photos-gratuite/batiments-modernes_1127-2851.jpg?t=st=1657471356~exp=1657471956~hmac=ef3b3e77f470220d36bb050bed73edc439e85bfe5d121f5d1828b94458fb209a&w=1380');
-  background-repeat: no-repeat;
-  background-size:cover;
-  height:90vh;
-  
 }
 }
 </style>

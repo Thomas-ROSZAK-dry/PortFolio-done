@@ -1,16 +1,15 @@
 <template>
   <div id="app"></div>
-  <Header />
+  <Header></Header>
  <!--header + footer-->
  <router-view />
  <Footer></Footer>
  </template>
 
 
-<script lang="ts">
-import Footer from '@/views/public/Footer.vue'
+<script>
 import Header from '@/views/public/Header.vue'
-
+import Footer from '@/views/public/Footer.vue'
 
 
 export default {
@@ -24,10 +23,6 @@ export default {
  
 }
   
-
-
-
-
 </script>
 
 
