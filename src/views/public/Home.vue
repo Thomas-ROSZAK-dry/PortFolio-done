@@ -12,9 +12,10 @@
        
     </div>
     <div class=" text ">
-      <div class="media-content ">
-        <p class="is-size-1 has-text-weight-bold mt-6 "><a href="https://github.com/Thomas-ROSZAK-dry" target="_blank" >{{title}}</a></p>
-        <router-link to="/Contact" >📩<p class="has-text-weight-bold  mt-4 	"> {{email}}</p></router-link><br><br>
+      <div class="media-content is-family-sans-serif ">
+        <p class="is-size-3 has-text-weight-bold mt-6  "><a href="https://github.com/Thomas-ROSZAK-dry" target="_blank" >{{title}}</a></p>
+        <br>
+        <router-link to="/Contact" ><p class="has-text-weight-bold  mt-5 	">📩 {{email}}</p></router-link><br><br>
       </div>
       🔭 Currently undergoing a career change, I'm honing my web development skills <br><br>
       🌱 As a dedicated learner, I'm continuously exploring VueJS. <br><br>
@@ -55,10 +56,12 @@ export default {
  width: 100vw;
 
  } */
-
+.text{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
 .card {
-  background-image: url('https://img.freepik.com/photos-gratuite/ville-jour-brouillard_1149-101.jpg?1&w=900&t=st=1701363038~exp=1701363638~hmac=e07ceeb4cdd461c073e7894367b227019027e2327d987b987c3d1c7188679e8b');
-  background-repeat: no-repeat;
+  background-color:#84ADC9;
   display: flex;
   flex-direction: row;
   align-items: center;

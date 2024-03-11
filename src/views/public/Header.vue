@@ -48,12 +48,11 @@
  
  <style  lang="scss" scoped >
  a {
-    color:black;
-    font-size:initial;
+  color: black;
  }
  
- 
  .navbar-menu {
-   padding: 0;
+  background-color: lightgrey;
+  margin-left: -24px;
  }
  </style>
